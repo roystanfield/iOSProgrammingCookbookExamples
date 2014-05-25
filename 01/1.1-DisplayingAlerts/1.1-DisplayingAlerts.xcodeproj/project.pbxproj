@@ -19,6 +19,7 @@
 		8CF1965D193273E4004562EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF19645193273E4004562EB /* UIKit.framework */; };
 		8CF19665193273E4004562EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CF19663193273E4004562EB /* InfoPlist.strings */; };
 		8CF19667193273E4004562EB /* __1_DisplayingAlertsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF19666193273E4004562EB /* __1_DisplayingAlertsTests.m */; };
+		8CF196721932774C004562EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF196711932774C004562EB /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		8CF19662193273E4004562EB /* 1.1-DisplayingAlertsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "1.1-DisplayingAlertsTests-Info.plist"; sourceTree = "<group>"; };
 		8CF19664193273E4004562EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8CF19666193273E4004562EB /* __1_DisplayingAlertsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __1_DisplayingAlertsTests.m; sourceTree = "<group>"; };
+		8CF196701932774C004562EB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8CF196711932774C004562EB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				8CF19650193273E4004562EB /* JRSAppDelegate.h */,
 				8CF19651193273E4004562EB /* JRSAppDelegate.m */,
+				8CF196701932774C004562EB /* ViewController.h */,
+				8CF196711932774C004562EB /* ViewController.m */,
 				8CF19653193273E4004562EB /* Images.xcassets */,
 				8CF19648193273E4004562EB /* Supporting Files */,
 			);
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF196721932774C004562EB /* ViewController.m in Sources */,
 				8CF19652193273E4004562EB /* JRSAppDelegate.m in Sources */,
 				8CF1964E193273E4004562EB /* main.m in Sources */,
 			);
