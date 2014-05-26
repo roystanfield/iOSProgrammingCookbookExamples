@@ -10,6 +10,7 @@
 
 @interface ViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 @property (nonatomic, strong) UIPickerView *myPicker;
+@property (nonatomic, strong) NSArray *pickerWords;
 @end
 
 @implementation ViewController
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.pickerWords = @[@"Thing 1", @"Thing 2", @"Thing 3", @"Thing 4", @"Thing 5", @"Thing 6"];
     
     self.myPicker = [[UIPickerView alloc] init];
     self.myPicker.dataSource = self;
@@ -54,7 +57,8 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
 {
     if ([pickerView isEqual:self.myPicker]) {
-        return 10;
+//        return 10;
+        return self.pickerWords.count;
     }
     
     return 0;
@@ -63,7 +67,8 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     if ([pickerView isEqual:self.myPicker]) {
-        return [NSString stringWithFormat:@"Row %ld", (long)row + 1];
+//        return [NSString stringWithFormat:@"Row %ld", (long)row + 1];
+        return self.pickerWords[row];
     }
     
     return nil;
